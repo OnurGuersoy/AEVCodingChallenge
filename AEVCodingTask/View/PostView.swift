@@ -28,7 +28,7 @@ struct PostView: View {
                 Image(from: URL(string: post.content.first?.media.url ?? ""))
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 120, height: 120, alignment: .center)
+                    .frame(width: 100, height: 100, alignment: .center)
                     .cornerRadius(10)
                     .padding()
             }
