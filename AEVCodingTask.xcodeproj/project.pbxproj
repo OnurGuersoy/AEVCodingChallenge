@@ -32,8 +32,8 @@
 		62596E79238B1449007D4FC7 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62596E78238B1449007D4FC7 /* PostsViewModel.swift */; };
 		62596E7B238B1A7D007D4FC7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62596E7A238B1A7D007D4FC7 /* Service.swift */; };
 		62596E7E238B1CE0007D4FC7 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62596E7D238B1CE0007D4FC7 /* PostView.swift */; };
-		62596E81238B1E2F007D4FC7 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62596E80238B1E2F007D4FC7 /* ImageView.swift */; };
 		62596E83238B2348007D4FC7 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62596E82238B2348007D4FC7 /* ActivityIndicator.swift */; };
+		62596E8D238E9D1B007D4FC7 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62596E8C238E9D1B007D4FC7 /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +85,8 @@
 		62596E78238B1449007D4FC7 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		62596E7A238B1A7D007D4FC7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		62596E7D238B1CE0007D4FC7 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
-		62596E80238B1E2F007D4FC7 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		62596E82238B2348007D4FC7 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		62596E8C238E9D1B007D4FC7 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				62596E78238B1449007D4FC7 /* PostsViewModel.swift */,
+				62596E8C238E9D1B007D4FC7 /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -251,7 +252,6 @@
 		62596E7F238B1E1D007D4FC7 /* UIHelper */ = {
 			isa = PBXGroup;
 			children = (
-				62596E80238B1E2F007D4FC7 /* ImageView.swift */,
 				62596E82238B2348007D4FC7 /* ActivityIndicator.swift */,
 			);
 			path = UIHelper;
@@ -400,13 +400,13 @@
 				62596E72238B1006007D4FC7 /* Post.swift in Sources */,
 				62596E7B238B1A7D007D4FC7 /* Service.swift in Sources */,
 				62596E70238B0FBD007D4FC7 /* PostContent.swift in Sources */,
-				62596E81238B1E2F007D4FC7 /* ImageView.swift in Sources */,
 				62596E76238B1255007D4FC7 /* Posts.swift in Sources */,
 				62596E60238B09C7007D4FC7 /* Dispatcher.swift in Sources */,
 				62596E6E238B0EFD007D4FC7 /* Media.swift in Sources */,
 				62596E83238B2348007D4FC7 /* ActivityIndicator.swift in Sources */,
 				62596E79238B1449007D4FC7 /* PostsViewModel.swift in Sources */,
 				62596E64238B0A13007D4FC7 /* Request.swift in Sources */,
+				62596E8D238E9D1B007D4FC7 /* PostViewModel.swift in Sources */,
 				62596E61238B0A08007D4FC7 /* Operation.swift in Sources */,
 				62596E7E238B1CE0007D4FC7 /* PostView.swift in Sources */,
 				62596E74238B107F007D4FC7 /* GetNextPostsOperation.swift in Sources */,

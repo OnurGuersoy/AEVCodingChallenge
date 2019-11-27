@@ -9,27 +9,43 @@
 import SwiftUI
 
 struct PostView: View {
-    let post: Post
+    let viewModel: PostViewModel
 
     var body: some View {
         HStack {
             VStack {
-                Image(from: URL(string: post.user.image_url))
+                viewModel.userImageData != nil ?
+                    Image(uiImage: UIImage(data: viewModel.userImageData!) ?? UIImage())
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 50.0, height: 50.0, alignment: .center)
+                        .cornerRadius(30.0)
+                        .padding()
+                    :
+                    Image(systemName: "person.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 50, height: 50, alignment: .center)
-                    .cornerRadius(30)
+                    .frame(width: 50.0, height: 50.0, alignment: .center)
+                    .cornerRadius(30.0)
                     .padding()
-                Text(post.user.name)
+                Text(viewModel.post.user.name)
             }
             Spacer()
             VStack {
-                Text(post.message)
-                Image(from: URL(string: post.content.first?.media.url ?? ""))
+                Text(viewModel.post.message)
+                viewModel.postImageData != nil ?
+                    Image(uiImage: UIImage(data: viewModel.postImageData!) ?? UIImage())
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 100, height: 100, alignment: .center)
-                    .cornerRadius(10)
+                    .cornerRadius(30)
+                    .padding()
+                    :
+                    Image(systemName: "photo.fill")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .cornerRadius(30)
                     .padding()
             }
         }

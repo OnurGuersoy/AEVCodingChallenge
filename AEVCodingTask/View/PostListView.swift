@@ -15,7 +15,7 @@ struct PostListView: View {
         NavigationView {
             ZStack {
                 List (viewModel.posts, id: \.id) { post in
-                    PostView(post: post)
+                    PostView(viewModel: PostViewModel(with: post))
                     .onAppear {
                         self.viewModel.reloadItemsOnAppear(post: post)
                     }
